@@ -14,7 +14,7 @@ I am not a java developper so the quality of the code is likely to be horrendous
 How to use
 ----------
 
-The example here can be attach to a netcat source. Compile it( or simply download the jar from here), and copy the jar along with the json-simple jar https://json-simple.googlecode.com/files/json-simple-1.1.1.jar to the flume lib directory.
+The example here can be attached to a netcat source. Compile it( or simply download the jar from here), and copy the jar along with the json-simple jar https://json-simple.googlecode.com/files/json-simple-1.1.1.jar to the flume lib directory.
 
 Afterwards edit the flume configuration to configure the interceptor:
 
