@@ -36,8 +36,8 @@ public class JsonInterceptor implements Interceptor {
 	try {
 		jsonObject = (JSONObject) jsonParser.parse(body);
 	} catch (ParseException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.print("WARNING: Received this log message that is not formatted in json: "+body+"\n");
+		return event;
 	}
 	  ContainerFactory containerFactory = new ContainerFactory(){
 	    public List creatArrayContainer() {
@@ -60,7 +60,7 @@ public class JsonInterceptor implements Interceptor {
 	      
 	      headers.put(KeyName, KeyValue);
 	    }
-	                        
+	    event.setBody("Message modified by Jsoninterceptor".getBytes());                    
 	    
 	  }
 	  catch(ParseException pe){
